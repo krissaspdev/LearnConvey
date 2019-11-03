@@ -1,0 +1,26 @@
+@orders = http://localhost:5000
+
+###
+GET {{deliveries}}
+
+###
+GET {{orders}}
+
+###
+GET {{pricing}}
+
+
+@customerId = a92b8a40-45e8-4a65-842b-90f6f18a8b38
+
+###
+POST {{orders}}/orders
+Content-Type: application/json
+
+{
+  "customerId": "{{customerId}}"
+}
+
+@orderLocation = {{create_order.response.headers.location}}
+
+###
+GET {{orders}}/{{orderLocation}}

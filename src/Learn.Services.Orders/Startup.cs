@@ -35,13 +35,13 @@ namespace Learn.Services.Orders
         {
             services.AddControllers().AddNewtonsoftJson();
             services.AddConvey()
-                .AddSwaggerDocs()
                 .AddCommandHandlers()
                 .AddEventHandlers()
-                .AddRedis()
+                .AddQueryHandlers()
+                .AddInMemoryCommandDispatcher()
                 .AddInMemoryEventDispatcher()
                 .AddInMemoryQueryDispatcher()
-                .AddInMemoryCommandDispatcher()
+                .AddRedis()
                 .AddRabbitMq()
                 .Build();
         }
@@ -52,9 +52,9 @@ namespace Learn.Services.Orders
         // Don't build the container; that gets done for you by the factory.
         public void ConfigureContainer(ContainerBuilder builder)
         {
-            //var assembly = typeof(Startup).Assembly;
-            //builder.RegisterAssemblyTypes(assembly)
-            //    .AsImplementedInterfaces();
+            var assembly = typeof(Startup).Assembly;
+            builder.RegisterAssemblyTypes(assembly)
+                .AsImplementedInterfaces();
             //builder.RegisterModule(new AutofacModule());
             //builder.RegisterType<MyType>().As<IMytype>();
         }
@@ -75,7 +75,7 @@ namespace Learn.Services.Orders
             app.UseRouting();
 
             app.UseAuthorization();
-            
+            app.UseInitializers();
 
             app.UseEndpoints(endpoints =>
             {

@@ -1,0 +1,30 @@
+2019-11-21 21:59:46.033 +01:00 [INF] Now listening on: https://localhost:5002
+2019-11-21 21:59:46.087 +01:00 [INF] Now listening on: http://localhost:5003
+2019-11-21 21:59:46.088 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2019-11-21 21:59:46.088 +01:00 [INF] Hosting environment: Development
+2019-11-21 21:59:46.088 +01:00 [INF] Content root path: /Users/krzysztof/Documents/Projekty/LearnConvey/src/Learn.Services.Orders
+2019-11-21 22:04:47.715 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:5002/orders application/json 58
+2019-11-21 22:04:47.840 +01:00 [INF] Executing endpoint 'Learn.Services.Orders.Controllers.OrdersController.Post (Learn.Services.Orders)'
+2019-11-21 22:04:47.979 +01:00 [INF] Route matched with {action = "Post", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Post(Learn.Services.Orders.Messages.Commands.CreateOrder) on controller Learn.Services.Orders.Controllers.OrdersController (Learn.Services.Orders).
+2019-11-21 22:04:48.285 +01:00 [INF] Created an order with id: d8f54528-3451-4295-b608-cc087c7688d1, customer: a92b8a40-45e8-4a65-842b-90f6f18a8b38.
+2019-11-21 22:04:48.363 +01:00 [INF] Publishing a message with routing key: 'order_created' to exchange: 'orders' [id: '24ced76f490e4bef8bde01cd9f6c8af2', correlation id: 'c12f5979f2174a1a89b6e66879e73a37']
+2019-11-21 22:04:48.386 +01:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2019-11-21 22:04:48.400 +01:00 [INF] Executed action Learn.Services.Orders.Controllers.OrdersController.Post (Learn.Services.Orders) in 408.1664ms
+2019-11-21 22:04:48.403 +01:00 [INF] Executed endpoint 'Learn.Services.Orders.Controllers.OrdersController.Post (Learn.Services.Orders)'
+2019-11-21 22:04:48.417 +01:00 [INF] Request finished in 707.9631ms 200 
+2019-11-21 22:07:56.748 +01:00 [INF] Application is shutting down...
+2019-11-21 22:16:24.877 +01:00 [INF] Now listening on: https://localhost:5002
+2019-11-21 22:16:24.930 +01:00 [INF] Now listening on: http://localhost:5003
+2019-11-21 22:16:24.931 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2019-11-21 22:16:24.931 +01:00 [INF] Hosting environment: Development
+2019-11-21 22:16:24.931 +01:00 [INF] Content root path: /Users/krzysztof/Documents/Projekty/LearnConvey/src/Learn.Services.Orders
+2019-11-21 22:18:12.603 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:5002/orders application/json 58
+2019-11-21 22:18:12.659 +01:00 [INF] Executing endpoint 'Learn.Services.Orders.Controllers.OrdersController.Post (Learn.Services.Orders)'
+2019-11-21 22:18:12.714 +01:00 [INF] Route matched with {action = "Post", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Post(Learn.Services.Orders.Messages.Commands.CreateOrder) on controller Learn.Services.Orders.Controllers.OrdersController (Learn.Services.Orders).
+2019-11-21 22:18:12.869 +01:00 [INF] Created an order with id: c7c8743f-2976-4e07-98ab-0e0e34f5b295, customer: a92b8a40-45e8-4a65-842b-90f6f18a8b38.
+2019-11-21 22:18:12.912 +01:00 [INF] Publishing a message with routing key: 'order_created' to exchange: 'orders' [id: '5b1789e2bd584238900d5e7dcc3900ba', correlation id: '4457f8daf91b4664a19d60bc4b7545cd']
+2019-11-21 22:18:12.926 +01:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2019-11-21 22:18:12.935 +01:00 [INF] Executed action Learn.Services.Orders.Controllers.OrdersController.Post (Learn.Services.Orders) in 214.26090000000002ms
+2019-11-21 22:18:12.937 +01:00 [INF] Executed endpoint 'Learn.Services.Orders.Controllers.OrdersController.Post (Learn.Services.Orders)'
+2019-11-21 22:18:12.943 +01:00 [INF] Request finished in 345.3793ms 200 
+2019-11-21 22:23:52.891 +01:00 [INF] Application is shutting down...

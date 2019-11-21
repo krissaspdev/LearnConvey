@@ -4,17 +4,15 @@ using Convey.CQRS.Events;
 using Convey.MessageBrokers;
 using Microsoft.Extensions.Logging;
 
-namespace Learn.Services.Deliveries.Events.External.Handlers
+namespace Learn.Services.Deliveries.Messages.Events.External.Handlers
 {
     public class OrderCreatedHandler: IEventHandler<OrderCreated>
     {
         private readonly ILogger<OrderCreatedHandler> _logger;
-        private readonly IBusPublisher _publisher;
 
-        public OrderCreatedHandler(ILogger<OrderCreatedHandler> logger, IBusPublisher publisher)
+        public OrderCreatedHandler(ILogger<OrderCreatedHandler> logger)
         {
             _logger = logger;
-            _publisher = publisher;
         }
         public async Task HandleAsync(OrderCreated @event)
         {

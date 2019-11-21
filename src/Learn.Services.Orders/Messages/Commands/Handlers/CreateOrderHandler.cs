@@ -23,6 +23,7 @@ namespace Learn.Services.Orders.Messages.Commands.Handlers
             //tu zapis do bazy
             
             await _publisher.PublishAsync(new OrderCreated(command.OrderId));
+            //await _publisher.PublishAsync(new CreateAnything(1));
             //await Task.CompletedTask;
         }
     }
